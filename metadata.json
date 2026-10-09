@@ -1,0 +1,6 @@
+{
+  "name": "قاعة القصر الملكي للمناسبات",
+  "description": "الموقع الرسمي لقاعة القصر الملكي في كربلاء - قاعة أعراس ومناسبات فاخرة، باقات الزفاف والمشيات وحجز فوري عبر واتساب وفاتورة إلكترونية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
