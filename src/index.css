@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* Custom Luxury Gradients & Gold Accents */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #aa7c11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #c59b3f 0%, #e0be6c 50%, #b88628 100%);
+}
+
+.gold-gradient-bg:hover {
+  background: linear-gradient(135deg, #b88628 0%, #d4af37 50%, #996515 100%);
+}
+
+.dark-teal-gradient {
+  background: linear-gradient(135deg, #062321 0%, #0c3e3a 50%, #061c1a 100%);
+}
+
+/* Print styling for Invoice */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-invoice, #printable-invoice * {
+    visibility: visible;
+  }
+  #printable-invoice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
